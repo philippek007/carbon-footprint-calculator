@@ -1,7 +1,10 @@
 $(document).ready(function() {
+	// hide results template on initial page load
+	$("#results").hide();
+
 	$("#calculate-btn").on("click", function() {
-		// hide form on calculate button clicked
-		// $("#form").hide();
+		// hide form when calculate button clicked
+		$("#form").hide();
 
 		// prevent negative numbers
 		$("[type='number']").bind("keydown", function(e) {
@@ -88,10 +91,21 @@ $(document).ready(function() {
 		}
 		console.log("Flights taken 4 hours or more score is: " + flights4MoreScore);
 
-		totalScore = electricScore + gasScore + oilScore + carScore	+ flights4LessScore + flights4MoreScore + newspaperScore + alumTinScore;
-		console.log("Total score is: " + totalScore);
+		// calculate scores for each category
+		var energyScore = electricScore + gasScore + oilScore;
+		var travelScore = carScore	+ flights4LessScore + flights4MoreScore;
+		var wasteScore = newspaperScore + alumTinScore;
 
-		// display results
-		// $("#results").show();
+		// calculate total score and round to nearest whole integer
+		totalScore = Math.round(energyScore + travelScore + wasteScore);
+		console.log(totalScore);
+
+		// populate score in results template
+		document.getElementById("score").innerHTML = totalScore;
+
+		// display results template
+		$("#results").show();
+
+
 	});
 });
