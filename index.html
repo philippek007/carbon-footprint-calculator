@@ -7,11 +7,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-
-
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+				<div id="form">
+					<form>
+						<h3><i class="fa fa-bolt" aria-hidden="true"></i> Energy</h3>	
+						<div class="form-group">
+							<label for="electricity">Monthly electricity bill</label>
+							<div class="input-group">
+								<div class="input-group-addon">$</div>
+								<input class="form-control" id="electricity" type="number" min="0" step="0.01">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="gas">Monthly gas bill</label>
+							<div class="input-group">
+								<div class="input-group-addon">$</div>
+								<input class="form-control" id="gas" type="number" min="0" step="0.01">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="oil">Monthly oil bill</label>
+							<div class="input-group">
+								<div class="input-group-addon">$</div>
+								<input class="form-control" id="oil" type="number" min="0" step="0.01">
+							</div>
+						</div>
+						<h3><i class="fa fa-globe" aria-hidden="true"></i> Travel</h3>
+						<div class="form-group">
+							<label for="car">Annual miles driven on your car</label>
+							<input class="form-control" id="car" type="number" min="0" step="1">
+						</div>
+						<div class="form-group">
+							<label for="flights-4-less">Number of flights taken in the past year (4 hours or less)</label>
+							<input class="form-control" id="flights-4-less" type="number" min="0" step="1">
+						</div>
+						<div class="form-group">
+							<label for="flights-4-more">Number of flights taken in the past year (4 hours or more)</label>
+							<input class="form-control" id="flights-4-more" type="number" min="0" step="1">
+						</div>
+						<h3><i class="fa fa-recycle" aria-hidden="true"></i> Waste</h3>
+						<div class="form-group">
+							<label>Do you recycle newspaper?</label>
+							<div class="radio">
+								<label>
+									<input type="radio" name="newspaperOptionsRadios" id="optionsRadio1" value="option1">
+									Yes
+								</label>
+							</div>
+							<div class="radio">
+								<label>
+									<input type="radio" name="newspaperOptionsRadios" id="optionsRadio2" value="option2">
+									No
+								</label>
+							</div>
+						</div>
+						<div class="form-group">
+							<label>Do you recycle aluminum and tin?</label>
+							<div class="radio">
+								<label>
+									<input type="radio" name="alumtinOptionsRadios" id="optionsRadio3" value="option3">
+									Yes
+								</label>
+							</div>
+							<div class="radio">
+								<label>
+									<input type="radio" name="alumtinOptionsRadios" id="optionsRadio4" value="option4">
+									No
+								</label>
+							</div>
+						</div>
+						<button type="button" class="btn btn-primary">Calculate</button>
+					</form>
+				</div>
+				<div id="results">
+				</div>
+			</div>
+		</div>
+	</div>
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<!-- Latest compiled and minified JavaScript -->
