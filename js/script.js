@@ -104,6 +104,7 @@ $(document).ready(function() {
 		document.getElementById("score").innerHTML = totalScore;
 
 		// display results template
+		window.scrollTo(0, 400);
 		$("#results").show();
 
 

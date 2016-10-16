@@ -1,0 +1,36 @@
+body {
+	
+}
+
+#form-area {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 100px;
+	padding-right: 100px;
+	background-color: rgba(236, 249, 242, 0.4);
+}
+
+#announcement-section {
+	min-height: 400px;
+	background-image: url("../images/green-leaves.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#home-energy-label, .fa-home {
+	color: #FF8C00;
+}
+
+#travel-label, .fa-globe {
+	color: #008B8B;
+}
+
+#waste-label, .fa-recycle {
+	color: #228B22;
+}
+
+.form-control {
+	max-width: 10em;
+}
+

@@ -12,14 +12,16 @@
 
 </head>
 <body>
-	<div class="container">
+	<div class="container-fluid">
 		<div class="row">
-			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="announcement-section">
 			</div>
-			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+		</div>
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="form-area">
 				<div id="form">
 					<form>
-						<h3><i class="fa fa-home" aria-hidden="true"></i> Home Energy</h3>	
+						<h4 id="home-energy-label"><i class="fa fa-home" aria-hidden="true"></i> Home Energy</h4>	
 						<div class="form-group">
 							<label for="electric">Monthly electric bill</label>
 							<div class="input-group">
@@ -44,7 +46,8 @@
 							</div>
 							<span class="help-block">Enter 0 if not applicable. If left blank, will default to 0.</span>
 						</div>
-						<h3><i class="fa fa-globe" aria-hidden="true"></i> Travel</h3>
+						<br/>
+						<h4 class="form-section-label" id="travel-label"><i class="fa fa-globe" aria-hidden="true"></i> Travel</h4>
 						<div class="form-group">
 							<label for="car">Annual miles driven on your car</label>
 							<input class="form-control" id="car" type="number" min="0" step="1">
@@ -60,7 +63,8 @@
 							<input class="form-control" id="flights-4-more" type="number" min="0" step="1">
 							<span class="help-block">Enter 0 if not applicable. If left blank, will default to 0.</span>
 						</div>
-						<h3><i class="fa fa-recycle" aria-hidden="true"></i> Waste</h3>
+						<br/>
+						<h4 class="form-section-label" id="waste-label"><i class="fa fa-recycle" aria-hidden="true"></i> Waste</h4>
 						<div class="form-group">
 							<label>Do you recycle newspaper?</label>
 							<div class="radio">
@@ -91,7 +95,8 @@
 								</label>
 							</div>
 						</div>
-						<button id="calculate-btn" type="button" class="btn btn-primary">Calculate</button>
+						<br/>
+						<button id="calculate-btn" type="button" class="btn btn-success btn-lg">Calculate</button>
 					</form>
 				</div>
 				<div id="results">
@@ -99,7 +104,7 @@
 					<h1 id="score"></h1>
 					<h4>pounds per year</h4>
 				</div>
-			</div>
+			</div>		
 		</div>
 	</div>
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
