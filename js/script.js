@@ -2,6 +2,10 @@ $(document).ready(function() {
 	// hide results template on initial page load
 	$("#results").hide();
 
+	$(function () {
+  		$('[data-toggle="tooltip"]').tooltip()
+	});
+
 	$("#calculate-btn").on("click", function() {
 		// hide form when calculate button clicked
 		$("#form").hide();

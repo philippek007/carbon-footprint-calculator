@@ -14,14 +14,18 @@
 <body>
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="announcement-section">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center" id="announcement-panel">
+				<h1 id="announcement-header">What is your carbon footprint?</h1>
+				<h3 id="announcement-subheader">Find out now with this simple calculator</h3>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="form-area">
+			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4" id="form-area">
 				<div id="form">
 					<form>
-						<h4 id="home-energy-label"><i class="fa fa-home" aria-hidden="true"></i> Home Energy</h4>	
+						<h3 id="home-energy-label"><i class="fa fa-home" aria-hidden="true"></i> Home Energy</h3>	
 						<div class="form-group">
 							<label for="electric">Monthly electric bill</label>
 							<div class="input-group">
@@ -31,7 +35,7 @@
 							<span class="help-block">Enter 0 if not applicable. If left blank, will default to 0.</span>
 						</div>
 						<div class="form-group">
-							<label for="gas">Monthly gas bill</label>
+							<label for="gas">Monthly natural gas bill</label>
 							<div class="input-group">
 								<div class="input-group-addon">$</div>
 								<input class="form-control" id="gas" type="number" min="0" step="0.01">
@@ -39,7 +43,11 @@
 							<span class="help-block">Enter 0 if not applicable. If left blank, will default to 0.</span>
 						</div>
 						<div class="form-group">
-							<label for="oil">Monthly oil bill</label>
+							<label for="oil">Monthly oil bill
+								<button id="oil-tooltip-btn" type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="Some homes use heating oil as a fuel oil for furnaces or boilers, and is often abbreviated as HHO.">
+									<span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>
+								</button>
+							</label>
 							<div class="input-group">
 								<div class="input-group-addon">$</div>
 								<input class="form-control" id="oil" type="number" min="0" step="0.01">
@@ -47,7 +55,7 @@
 							<span class="help-block">Enter 0 if not applicable. If left blank, will default to 0.</span>
 						</div>
 						<br/>
-						<h4 class="form-section-label" id="travel-label"><i class="fa fa-globe" aria-hidden="true"></i> Travel</h4>
+						<h3 class="form-section-label" id="travel-label"><i class="fa fa-globe" aria-hidden="true"></i> Travel</h3>
 						<div class="form-group">
 							<label for="car">Annual miles driven on your car</label>
 							<input class="form-control" id="car" type="number" min="0" step="1">
@@ -64,7 +72,7 @@
 							<span class="help-block">Enter 0 if not applicable. If left blank, will default to 0.</span>
 						</div>
 						<br/>
-						<h4 class="form-section-label" id="waste-label"><i class="fa fa-recycle" aria-hidden="true"></i> Waste</h4>
+						<h3 class="form-section-label" id="waste-label"><i class="fa fa-recycle" aria-hidden="true"></i> Waste</h3>
 						<div class="form-group">
 							<label>Do you recycle newspaper?</label>
 							<div class="radio">
@@ -96,7 +104,7 @@
 							</div>
 						</div>
 						<br/>
-						<button id="calculate-btn" type="button" class="btn btn-success btn-lg">Calculate</button>
+						<button id="calculate-btn" type="button" class="btn btn-success btn-lg btn-block">Calculate</button>
 					</form>
 				</div>
 				<div id="results">
@@ -104,7 +112,9 @@
 					<h1 id="score"></h1>
 					<h4>pounds per year</h4>
 				</div>
-			</div>		
+			</div>	
+			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+			</div>	
 		</div>
 	</div>
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

@@ -1,17 +1,27 @@
-body {
-	
+#announcement-panel {
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+#announcement-header, #announcement-subheader {
+	color: white;
+	background-color: rgba(38, 77, 0, 0.7);
+	padding: 5px;
+}
+
+#announcement-header {
+	font-size: 4em;
+}
+
+#announcement-subheader {
+	font-size: 2em;
 }
 
 #form-area {
-	padding-top: 20px;
-	padding-bottom: 20px;
-	padding-left: 100px;
-	padding-right: 100px;
-	background-color: rgba(236, 249, 242, 0.4);
+	padding: 40px;
 }
 
-#announcement-section {
-	min-height: 400px;
+#announcement-panel {
 	background-image: url("../images/green-leaves.jpg");
 	background-position: center;
 	background-size: cover;
@@ -31,6 +41,11 @@ body {
 }
 
 .form-control {
-	max-width: 10em;
+	/*max-width: 10em;*/
+}
+
+#oil-tooltip-btn {
+	border: none;
+	background-color: transparent;
 }
 
