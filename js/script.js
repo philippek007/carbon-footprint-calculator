@@ -2,22 +2,18 @@ $(document).ready(function() {
 	// hide results template on initial page load
 	$("#results").hide();
 
-	$(function () {
-  		$('[data-toggle="tooltip"]').tooltip()
+	// prevent ability to type negative numbers or spaces in input fields
+	$("[type='number']").bind("keydown", function(e) {
+		var code = e.keyCode || e.which;
+
+		if (code == 189 || code == 173 || code == 32) {
+			return false;
+		}
 	});
 
 	$("#calculate-btn").on("click", function() {
-		// hide form when calculate button clicked
+		// hide form template if all inputs are completed
 		$("#form").hide();
-
-		// prevent negative numbers
-		$("[type='number']").bind("keydown", function(e) {
-			var code = e.keyCode || e.which;
-
-			if (code == 189) {
-				return false;
-			}
-		});
 
 		// get input values
 		var electricInput = document.getElementById("electric").value;
