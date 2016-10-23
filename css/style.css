@@ -17,7 +17,7 @@
 	font-size: 2em;
 }
 
-#form-area {
+#form, #results {
 	padding: 40px;
 }
 
@@ -40,8 +40,9 @@
 	color: #228B22;
 }
 
-#oil-tooltip-btn {
-	border: none;
-	background-color: transparent;
+#score {
+	font-size: 5em;
+	background-color: rgb(242, 242, 242);
+	border-radius: 50%;
+	padding: 50px;
 }
-

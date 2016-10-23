@@ -102,11 +102,15 @@ $(document).ready(function() {
 			totalScore = Math.round(energyScore + travelScore + wasteScore);
 			// console.log(totalScore);
 
-			// populate score in results template
 			document.getElementById("score").innerHTML = totalScore;
 
 			// display results
 			$("#results").show();
+
+			// refresh page when recalculate button clicked
+			$("#recalculate-btn").on("click", function() {
+				location.reload();
+			});
 		}
 
 		// check selection made for recycling newspaper before calculating and displaying score
