@@ -7,7 +7,7 @@ $(document).ready(function() {
 	$("[type='number']").bind("keydown", function(e) {
 		var code = e.keyCode || e.which;
 
-		if (code == 189 || code == 173 || code == 32 || code == 69) {
+		if (code == 189 || code == 173 || code == 32 || code == 69 || code == 109) {
 			return false;
 		}
 	});
