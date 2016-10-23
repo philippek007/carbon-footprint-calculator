@@ -14,6 +14,7 @@ $(document).ready(function() {
 
 	$("#calculate-btn").on("click", function() {
 		var calculateAndDisplayScore = function() {
+			window.scrollTo(0, 400);
 			// hide form template if all inputs are completed
 			$("#form").hide();
 
@@ -110,6 +111,7 @@ $(document).ready(function() {
 			// refresh page when recalculate button clicked
 			$("#recalculate-btn").on("click", function() {
 				location.reload();
+				window.scrollTo(0, 0);
 			});
 		}
 
