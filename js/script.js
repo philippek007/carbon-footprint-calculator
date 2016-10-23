@@ -101,9 +101,10 @@ $(document).ready(function() {
 
 			// calculate total score and round to nearest whole integer
 			totalScore = Math.round(energyScore + travelScore + wasteScore);
+			var formattedScore = totalScore.toLocaleString("en");
 			// console.log(totalScore);
 
-			document.getElementById("score").innerHTML = totalScore;
+			document.getElementById("score").innerHTML = formattedScore;
 
 			// display results
 			$("#results").show();
