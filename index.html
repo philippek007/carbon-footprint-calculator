@@ -43,7 +43,7 @@
 							<span class="help-block">Enter 0 if not applicable. If left blank, will default to 0.</span>
 						</div>
 						<div class="form-group">
-							<label for="oil">Monthly oil bill</label>
+							<label for="oil">Monthly oil bil</label>
 							<div class="input-group">
 								<div class="input-group-addon">$</div>
 								<input class="form-control" id="oil" type="number" min="0" step="0.01">
@@ -71,6 +71,7 @@
 						<h3 class="form-section-label" id="waste-label"><i class="fa fa-recycle" aria-hidden="true"></i> Waste</h3>
 						<div class="form-group">
 							<label>Do you recycle newspaper?</label>
+							<div class="alert alert-danger" role="alert" id="newspaper-alert"><strong>Oops!</strong> You need to make a selection.</div>
 							<div class="radio">
 								<label>
 									<input type="radio" name="newspaperOptionsRadios" id="optionsRadio1" value="option1">
@@ -86,6 +87,7 @@
 						</div>
 						<div class="form-group">
 							<label>Do you recycle aluminum and tin?</label>
+							<div class="alert alert-danger" role="alert" id="alum-tin-alert"><strong>Oops!</strong> You need to make a selection.</div>
 							<div class="radio">
 								<label>
 									<input type="radio" name="alumtinOptionsRadios" id="optionsRadio3" value="option3">
