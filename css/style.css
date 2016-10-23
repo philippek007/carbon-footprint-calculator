@@ -46,3 +46,12 @@
 	border-radius: 50%;
 	padding: 50px;
 }
+
+.progress-bar {
+	font-size: 1.2em;
+}
+
+.score-info {
+	padding: 10px;
+	margin: 0;
+}
